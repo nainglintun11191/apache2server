@@ -2,9 +2,7 @@ FROM ubuntu
 
 MAINTAINER konaing
 
-
 RUN apt-get update && apt-get -y install apache2 && apt-get clean
-
 
 ENV APACHE_LOG_DIR /var/log/apache2
 ENV APACHE_PID_FILE /var/run/apache2/apache2.pid
